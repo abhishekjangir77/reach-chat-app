@@ -117,7 +117,7 @@ export const updateProfile = async (req, res) => {
       { profilepic: uploadResponse.secure_url },
       { new: true },
     );
-    res.status(200).json(updateUser );
+    res.status(200).json(updateUser);
   } catch (error) {
     return res.status(500).json({
       message: "Internal Server Error",
